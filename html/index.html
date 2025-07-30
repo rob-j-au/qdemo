@@ -1,3 +1,261 @@
+<!DOCTYPE html>
 <html>
-    This is Rob Jennings website
+<head>
+    <title>🌟 Rob Jennings' Totally Awesome Homepage 🌟</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
+            background-size: 400% 400%;
+            animation: rainbow 3s ease infinite;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+            overflow-x: auto;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 5px solid #ff0000;
+            padding: 20px;
+            box-shadow: 10px 10px 0px #000000;
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+            background-size: 600% 100%;
+            animation: slide 2s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes slide {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        .blink {
+            animation: blink 1s linear infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .marquee {
+            background: #ffff00;
+            border: 3px solid #ff0000;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .section {
+            background: #e0e0ff;
+            border: 2px solid #0000ff;
+            margin: 20px 0;
+            padding: 15px;
+        }
+        
+        .section h2 {
+            color: #ff0000;
+            font-size: 24px;
+            text-decoration: underline;
+            margin-top: 0;
+        }
+        
+        .counter {
+            background: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #00ff00;
+            margin: 20px 0;
+        }
+        
+        .guestbook {
+            background: #ffffe0;
+            border: 3px dashed #ff00ff;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .links {
+            background: #ffe0e0;
+            border: 2px solid #ff0000;
+            padding: 15px;
+        }
+        
+        .links a {
+            color: #0000ff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .links a:visited {
+            color: #800080;
+        }
+        
+        .footer {
+            text-align: center;
+            background: #c0c0c0;
+            border: 2px inset #c0c0c0;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        
+        .construction {
+            display: inline-block;
+            animation: bounce 1s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .sparkle {
+            color: #ff00ff;
+            font-size: 20px;
+            animation: sparkle 1.5s infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+        
+        table {
+            border-collapse: separate;
+            border-spacing: 2px;
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+        }
+        
+        td {
+            background: #ffffff;
+            border: 1px inset #c0c0c0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            🌟✨ Welcome to Rob Jennings' Cyber Space! ✨🌟
+        </div>
+        
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                🎵 Welcome to my homepage! 🎵 Thanks for visiting! 🎵 Don't forget to sign my guestbook! 🎵
+            </marquee>
+        </div>
+        
+        <div class="counter">
+            >>> VISITOR COUNTER <<<
+            You are visitor number: <span class="blink">001337</span>
+        </div>
+        
+        <div class="section">
+            <h2>🏠 About This Site</h2>
+            <p>Welcome to my <span class="blink">TOTALLY AWESOME</span> homepage! This site is dedicated to sharing my interests, hobbies, and connecting with fellow netizens across the World Wide Web!</p>
+            <p><span class="construction">🚧</span> This site is under construction! <span class="construction">🚧</span></p>
+            <p>Last updated: <strong>July 30, 2025</strong> <span class="sparkle">✨</span></p>
+        </div>
+        
+        <div class="section">
+            <h2>👨‍💻 About Me</h2>
+            <table>
+                <tr>
+                    <td><strong>Name:</strong></td>
+                    <td>Rob Jennings</td>
+                </tr>
+                <tr>
+                    <td><strong>Location:</strong></td>
+                    <td>Cyberspace 🌐</td>
+                </tr>
+                <tr>
+                    <td><strong>Interests:</strong></td>
+                    <td>Web Design, Technology, Cool Stuff!</td>
+                </tr>
+                <tr>
+                    <td><strong>Favorite Browser:</strong></td>
+                    <td>Netscape Navigator 4.0</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 My Interests</h2>
+            <ul>
+                <li><span class="sparkle">★</span> Quantum Computing & Control Theory</li>
+                <li><span class="sparkle">★</span> Web Development</li>
+                <li><span class="sparkle">★</span> Retro Computing</li>
+                <li><span class="sparkle">★</span> Science & Technology</li>
+                <li><span class="sparkle">★</span> Making Cool Websites!</li>
+            </ul>
+        </div>
+        
+        <div class="guestbook">
+            <h2>📝 Sign My Guestbook!</h2>
+            <p><strong>Please sign my guestbook and let me know you were here!</strong></p>
+            <p><a href="#">📝 SIGN GUESTBOOK</a> | <a href="#">👀 VIEW ENTRIES</a></p>
+            <p><em>Latest entry:</em> "Cool site dude! Keep up the awesome work! - WebSurfer99"</p>
+        </div>
+        
+        <div class="links">
+            <h2>🔗 Cool Links & Web Rings</h2>
+            <p><strong>Check out these awesome sites:</strong></p>
+            <ul>
+                <li><a href="#">🌟 My Friend's Homepage</a></li>
+                <li><a href="#">💻 Cool Tech Sites Web Ring</a></li>
+                <li><a href="#">🎮 Retro Gaming Central</a></li>
+                <li><a href="#">🚀 Space & Science Links</a></li>
+                <li><a href="#">📚 Web Development Resources</a></li>
+            </ul>
+            <p><strong>Web Rings I'm Part Of:</strong></p>
+            <p>[ <a href="#">← Previous</a> | <a href="#">Random</a> | <a href="#">Next →</a> ]</p>
+        </div>
+        
+        <div class="section">
+            <h2>📧 Contact Me</h2>
+            <p>Want to get in touch? Send me an email!</p>
+            <p>📧 <strong>rob@geocities.com</strong> (Not a real email!)</p>
+            <p>Or find me on:</p>
+            <ul>
+                <li>🌐 IRC: #coolwebsites on EFNet</li>
+                <li>💬 AOL Instant Messenger: RobTheWebMaster</li>
+                <li>📱 ICQ: 12345678</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>This site is best viewed in:</strong></p>
+            <p>🖥️ Netscape Navigator 4.0+ at 800x600 resolution 🖥️</p>
+            <p>Made with ❤️ and lots of <span class="blink">&lt;blink&gt;</span> tags!</p>
+            <p>© 2025 Rob Jennings - All Rights Reserved</p>
+            <p><span class="sparkle">✨</span> Powered by GeoCities <span class="sparkle">✨</span></p>
+        </div>
+    </div>
+</body>
 </html>
