@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qdemo
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: qdemo
+  template:
+    metadata:
+      labels:
+        app: qdemo
+    spec:
+      containers:
+        - image: robjau/qdemo
+          name: qdemo
+          ports:
+            - containerPort: 80
