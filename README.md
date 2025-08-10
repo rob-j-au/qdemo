@@ -8,12 +8,6 @@ Bonus Windsurf/Claude GenAI magic
 
 * "make the index page have a retro geocities style"
 
-## Build/Push
-
-```
-docker build -t robjau/qdemo:latest --platform linux/amd64 .
-docker push robjau/qdemo:latest
-```
 
 ## Local ArgoCD Deployment
 
@@ -45,6 +39,12 @@ argocd app create qdemo \
 #### Access the App
 `kubectl port-forward svc/qdemo -n qdemo 8000:80`
 
+
+## Build/Push/Deploy
+
+```
+./deploy_latest.sh
+```
 
 
 ## Dockerhub

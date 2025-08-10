@@ -10,7 +10,7 @@ HELM_TAG_PATH=".image.tag"
 
 # 1️⃣ Build the Docker image
 echo "🚀 Building Docker image..."
-docker build -t "$IMAGE_NAME:latest" .
+docker build -t "$IMAGE_NAME:latest" --platform linux/amd64 .
 
 # 2️⃣ Push to registry
 echo "📦 Pushing image..."
