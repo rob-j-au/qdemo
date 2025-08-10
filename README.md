@@ -30,7 +30,7 @@ Assumes an ArgoCD Server runing at
 ```
 argocd app create qdemo \
   --repo https://github.com/rob-j-au/qdemo \
-  --path .cicd \
+  --path .cicd/helm/qdemo \
   --dest-server https://kubernetes.default.svc \
   --dest-namespace qdemo
 ```
