@@ -41,7 +41,7 @@ argocd app create qdemo \
 
 #### Access the App (via NGINX Ingress with /etc/hosts entry)
 
-[https://qdemo.local](https://qdemo.local)
+[https://qdemo.minikube.local](https://qdemo.minikube.local)
 
 ## Build/Push/Deploy
 
