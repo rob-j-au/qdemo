@@ -36,9 +36,12 @@ argocd app create qdemo \
 #### Check the App Status
 `argocd app get qdemo`
 
-#### Access the App
+#### Access the App (Direct Service)
 `kubectl port-forward svc/qdemo -n qdemo 8000:80`
 
+#### Access the App (via NGINX Ingress with /etc/hosts entry)
+
+[https://qdemo.local](https://qdemo.local)
 
 ## Build/Push/Deploy
 
