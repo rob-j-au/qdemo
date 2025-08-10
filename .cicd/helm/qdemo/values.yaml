@@ -10,7 +10,7 @@ image:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest@sha256:6eef48cc4badb90d5168dfb9818dfb9218cb44ed9077723ee07d0a424d676881"
+  tag: "latest@sha256:3e2e337cc31d478764e4d42a1d4f0bfb260424dad0e12d87150c357b6874efe7"
 # This is for the secrets for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 imagePullSecrets: []
 # This is to override the chart name.
