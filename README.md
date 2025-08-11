@@ -45,6 +45,8 @@ argocd app create qdemo \
 
 ## Build/Push and Ready for Deploy
 
+Based on Git Repository update, ArgoCD will Sync to the latest version
+
 ```
 ./deploy_latest.sh
 ```
