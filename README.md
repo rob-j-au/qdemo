@@ -43,7 +43,7 @@ argocd app create qdemo \
 
 [https://qdemo.minikube.local](https://qdemo.minikube.local)
 
-## Build/Push/Deploy
+## Build/Push and Ready for Deploy
 
 ```
 ./deploy_latest.sh
