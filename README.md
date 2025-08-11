@@ -8,6 +8,17 @@ Bonus Windsurf/Claude GenAI magic
 
 * "make the index page have a retro geocities style"
 
+## Build/Push and Ready for GitOps Deploy
+
+Based on Git Repository update, ArgoCD will Sync to the latest version and Deploy to the cluster
+
+- Builds latest Docker Image
+- Pushes to Docker Repository with SHA tag
+- Update's Helm Values image tag to reflect new SHA
+
+```
+./deploy_latest.sh
+```
 
 ## Local ArgoCD Deployment
 
@@ -43,13 +54,7 @@ argocd app create qdemo \
 
 [https://qdemo.minikube.local](https://qdemo.minikube.local)
 
-## Build/Push and Ready for GitOps Deploy
 
-Based on Git Repository update, ArgoCD will Sync to the latest version and Deploy to the cluster
-
-```
-./deploy_latest.sh
-```
 
 
 ## Dockerhub
