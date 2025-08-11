@@ -43,7 +43,7 @@ argocd app create qdemo \
 
 [https://qdemo.minikube.local](https://qdemo.minikube.local)
 
-## Build/Push and Ready for Deploy
+## Build/Push and Ready for GitOpsDeploy
 
 Based on Git Repository update, ArgoCD will Sync to the latest version and Deploy to the cluster
 
